@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC4DA7DA-4682-417F-88D5-A318BCED6794}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DashBOARD_venta_de_casas</RootNamespace>
+    <AssemblyName>DashBOARD venta de casas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 2.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admi_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admi_UC.Designer.cs">
+      <DependentUpon>Admi_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraDatos.Designer.cs">
+      <DependentUpon>CompraDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmi.Designer.cs">
+      <DependentUpon>DashBoardAdmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ListadoDeviviendas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListadoDeviviendas.Designer.cs">
+      <DependentUpon>ListadoDeviviendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallPrincipal.Designer.cs">
+      <DependentUpon>PantallPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallPrincipalUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PantallPrincipalUsuario.Designer.cs">
+      <DependentUpon>PantallPrincipalUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admi_UC.resx">
+      <DependentUpon>Admi_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraDatos.resx">
+      <DependentUpon>CompraDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmi.resx">
+      <DependentUpon>DashBoardAdmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoDeviviendas.resx">
+      <DependentUpon>ListadoDeviviendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallPrincipal.resx">
+      <DependentUpon>PantallPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallPrincipalUsuario.resx">
+      <DependentUpon>PantallPrincipalUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeadmi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeadmiNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undeboardd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graficos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graficosN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unauthorized-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compraN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compraB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busquedap" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-80_icon-icons.com_57340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_house_10811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag_search_find_export_locate_5984%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IngresoPropiedadesVenta\IngresoPropiedadesVenta\IngresoPropiedadesVenta.csproj">
+      <Project>{2a40d846-03d5-4564-b5c1-403835258b96}</Project>
+      <Name>IngresoPropiedadesVenta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WinAppModElimCli\WinAppModElimCli\WinAppModElimCli.csproj">
+      <Project>{e10579cb-9001-4554-84a5-92dadf39ca20}</Project>
+      <Name>WinAppModElimCli</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
